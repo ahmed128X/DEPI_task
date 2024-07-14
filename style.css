@@ -1,0 +1,519 @@
+/* normalize page */
+body{
+  padding: 0;
+  margin: 0;
+}
+
+button{
+  cursor: pointer;
+}
+
+li{
+  list-style-type: none;
+}
+/* ------- */
+
+/* root for styling page --- */
+:root{
+  --navbar-link-color:#1F1534;
+  --font-style:sans-serif;
+  --navbar-link-font-size:15px;
+  --navbar-link-font-weight:500;
+  --navbar-link-decoration:none;
+  --display-flex-:flex;
+  --display-flex-wrap-:wrap;
+  --flex-:1;
+  --justify-content-:space-between;
+  --align-items-:center;
+  --border-:0;
+}
+/* ------------ */
+
+.container{
+  margin: 0 90px;
+}
+
+.container header {
+  display: var(--display-flex-);
+  justify-content: var(--justify-content-);
+  align-items: var(--align-items-);
+  padding: 30px 10px;
+  margin: 0 20px;
+}
+
+.container header nav ul{
+  display: flex ;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container header .brand_logo{
+  display: var(--display-flex-);
+  align-items: var(--align-items-);
+  font-family: var(--font-style);
+  font-weight: 700;
+}
+
+.container header nav ul li{
+  list-style-type: none;
+  margin: 0 18px;
+}
+
+.container header nav ul li a{
+  text-decoration: var(--navbar-link-decoration);
+  color:var(--navbar-link-color);
+  font-weight: var(--navbar-link-font-weight);
+  font-family: var(--font-style);
+  font-size: var(--navbar-link-font-size);
+}
+
+.container header .brand_logo .img_wrap{
+  border-radius: 50%;
+  background-color: #458FF6;
+  width: 35px;
+  height: 35px;
+  display: var(--display-flex-);
+  align-items: var(--align-items-);
+  justify-content: center;
+  margin-right: 10px;
+}
+
+.container header .brand_logo .img_wrap .brand_img{
+  width: 13px;
+}
+
+#home-link{
+  font-weight: 700;
+}
+
+/* Main ----------- */
+
+.page-upper-section{
+  display: var(--display-flex-);
+  flex-wrap: var(--display-flex-wrap-);
+  font-family: var(--font-style);
+  padding: 0 20px;
+  margin: 50px 20px;
+}
+
+#bg-img{
+  position: absolute;
+}
+
+.health_care_container{
+  position: relative;
+}
+
+.health_care_container #background{
+  position: absolute;
+  left: -120px;
+  top: -302px;
+  width: 62%;
+  z-index: -2;
+}
+
+.health_care_text{
+  margin: 28px 0;
+  line-height: 24px;
+  width: 60%;
+  color: #7D7987;
+}
+
+.page-upper-section button{
+  border: var(--border-);
+  background-color:#458FF6;
+  color: white;
+  padding: 13px 25px;
+  border-radius: 22px;
+}
+
+.page-upper-section .health_care_trafalgar {
+  flex: var(--flex-);
+  margin: 0 20px;
+}
+
+.health_care_trafalgar .virtual_care{
+  font-size: 48px;
+  font-weight: 500;
+  margin-top: 60px;
+}
+
+.health_care_img_wrapper{
+  flex: 1 0 350px;
+  padding: 20px;
+}
+
+.health_care_img_wrapper img{
+  width: 80%;
+}
+
+.service-title h2{
+  text-align: center;
+  font-family: var(--font-style);
+  font-weight: 100;
+}
+
+.service-title .what_we_do{
+  display: var(--display-flex-);
+  align-items: var(--align-items-);
+  justify-content: center;
+  margin: 25px 0;
+  color: #7D7987;
+  font-family: var(--font-style);
+  font-size: var(--navbar-link-font-size);
+}
+
+.what_we_do p{
+  width: 70%;
+  text-align: center;
+}
+
+.health_care_providing_cards_wrapper{
+  display: var(--display-flex-);
+  flex-wrap: var(--display-flex-wrap-);
+  align-items: var(--align-items-);
+  justify-content: var(--justify-content-);
+  gap: 30px;
+}
+
+.health_care_providing_cards_wrapper .card_wrap{
+  flex: 1 0 275px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.116);
+  border-radius: 10px;
+  padding:20px ;
+  height: 130px;
+}
+
+.health_care_providing_cards_wrapper .card_wrap img{
+  width: 40px;
+}
+
+.card_wrap .card-heading{
+  margin: 10px 0;
+  font-family: var(--font-style);
+  font-weight: 700;
+}
+
+.card_wrap .card-subheading{
+  color:#7D7987 ;
+  font-family: var(--font-style);
+  font-size: 14px;
+}
+
+.health_care_container .learn_more_btn{
+  display: var(--display-flex-);
+  justify-content: center;
+  align-items: var(--align-items-);
+  margin-top: 60px;
+}
+
+.learn_more_btn button{
+  border: 1px solid #458FF6;
+  background-color: transparent;
+  border-radius: 20px;
+  padding: 10px 28px;
+  color:#458FF6 ;
+}
+
+.leading-section{
+  margin: 50px 0;
+}
+
+.leading-section .leading_health_care_trafalgar,
+.download-health-care{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  font-family: var(--font-style);
+  justify-content: center;
+}
+
+.leading-section .leading_health_care_img_wrapper img,
+.download_health_care_img_wrapper img{
+  width: 80%;
+}
+
+.leading-text,
+text-container{
+  margin-top:50px ;
+  font-size: 14px;
+}
+
+.leading-text .learn_more_btn{
+  margin-top: 40px;
+  justify-content: start;
+}
+
+.text-container .learn_more_btn{
+  justify-content: start;
+}
+
+.text-container .learn_more_btn button{
+  display: var(--display-flex-);
+  align-items: center;
+  border-radius: 30px;
+}
+
+.text-container .learn_more_btn button img{
+  width: 10px;
+}
+
+.text-container .learn_more_btn button p{
+  margin: 4px 8px 4px 0;
+}
+
+.leading_health_care_text{
+  color:#7D7987 ;
+  margin: 20px 0;
+  width: 70%;
+  line-height: 25px;
+}
+
+.leading_care,
+.head-text{
+  font-size: 30px;
+  position: relative;
+  width: 90%;
+}
+
+.leading_care::after,
+.head-text::after{
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 100px;
+  height: 2px;
+  background-color: black;
+}
+
+.back-container{
+  background: linear-gradient(208.18deg, #67C3F3 9.05%, #5A98F2 76.74%);
+  border-radius: 10px;
+  margin: 80px 0;
+  padding: 10px 20px 30px 20px;
+}
+
+.back-container .review{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-family: var(--font-style);
+  font-size: 25px;
+  position: relative;
+}
+
+.back-container .review::after{
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 80px;
+  height: 2px;
+  background-color: white;
+}
+
+.comment-section{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  color: white;
+  font-family: var(--font-style);
+  margin: 20px;
+}
+
+.comment-section .comment-reviewer{
+  display: flex;
+  align-items: center;
+  flex: 1 0 150px;
+  justify-content: center;
+}
+
+.comment-section .comment-reviewer img{
+  width: 100px;
+  margin-right: 10px;
+}
+
+.comment-section p{
+  margin: 4px;
+  font-size: 14px;
+}
+
+.comment-review{
+  flex: 1 0 160px;
+  color: white;
+  font-family: var(--font-style);
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.latest-articles{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin: 60px 0;
+}
+
+.card-1,
+.card-2,
+.card-3{
+  border-radius: 15px;
+  width: 300px;
+  overflow: hidden;
+  box-shadow: 0 0 10px#458ff63f;
+}
+
+.card-1 .card-text,
+.card-2 .card-text,
+.card-3 .card-text{
+  padding: 0 20px;
+}
+
+.card-1 p:nth-child(1),
+.card-2 p:nth-child(1),
+.card-3 p:nth-child(1){
+  font-weight: 700;
+  font-family: var(--font-style);
+}
+
+.card-1 button,
+.card-2 button,
+.card-3 button{
+  border: var(--border-);
+  background-color: transparent;
+  color: #458FF6;
+  display: flex;
+  align-items: center;
+}
+
+.card-1 img,
+.card-2 img,
+.card-3 img{
+  width: 100%;
+}
+
+.card-1 #read_more,
+.card-2 #read_more,
+.card-3 #read_more{
+  width: 13px;
+  margin-left: 7px;
+  transition: .2s ease-in-out;
+}
+
+.card-1 button:hover #read_more,
+.card-2 #read_more:hover,
+.card-3 #read_more:hover{
+  transform: translatex(5px);
+}
+
+footer{
+  margin-top: 70px;
+  padding:70px 20px 70px 40px ;
+  color: white;
+  font-family: var(--font-style);
+  background: linear-gradient(183.41deg, #67C3F3 -8.57%, #5A98F2 82.96%);
+}
+
+.footer {
+  display: var(--display-flex-);
+}
+
+.footer > div {
+  padding: 10px;
+}
+
+.footer-brand-wrapper{
+  display:var(--display-flex-);
+  align-items: center;
+}
+
+.footer-brand-wrapper .footer-img-wrapper{
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.355);
+  display: var(--display-flex-);
+  justify-content:center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.footer-links{
+  display: var(--display-flex-);
+}
+
+.footer-links ul{
+  padding: 0;
+}
+
+.footer-links > div{
+  margin: 0 20px;
+}
+.footer-links ul li {
+  margin: 12px 0;
+  color: #ffffffa1;
+  font-size: 14px;
+}
+
+.footer-brand-wrapper p{
+  margin: 0;
+  padding-left: 10px;
+}
+
+.footer-info p:nth-child(1){
+  width: 50%;
+  font-size: 15px;
+  font-weight: 0;
+  line-height: 23px;
+  color: #fcfcfde7;
+}
+
+.footer-info p:nth-child(2){
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.view_all_btn{
+  display: var(--display-flex-);
+  align-items: center;
+  justify-content: center;
+}
+
+.view_all_btn p{
+  margin: 0;
+}
+
+.view_all_btn button{
+  border: 1px solid #458FF6;
+  background-color: transparent;
+  border-radius: 30px;
+  padding: 10px 35px;
+  color: #458FF6;
+}
+
+@media (max-width:992px){
+  .container header{
+    margin: 10px;
+  }
+  nav{
+    display: none;
+  }
+  .leading-section .leading_health_care_trafalgar,
+  .download-health-care{
+    grid-template-columns: 1fr;
+    justify-content: center;
+  }
+  .download-health-care .text-container{
+    margin-bottom: 50px;
+    grid-row: 2;
+  }
+}
+
+@media (max-width:600px){
+  .container{
+    margin: 0 30px !important;
+  }
+  .health_care_container{
+  background-size: 10;
+  }
+}
